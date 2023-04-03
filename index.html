@@ -6,9 +6,172 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
   <link rel="stylesheet" href="portfolio_style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-  <h1>Helloooo Everybody!!</h1>
+  <div class="container-presentation">
+    <img src="images/profile_pic3.jpg" alt="Julie Picture" class="picture">
+    <div class="card-presentation">
+      <div class="hello">
+        <h1>Hello, my name is </h1>
+        <h1 class="name"> Julie</h1>
+      </div>
+      <h2 class="programmer">I'm a programmer</h2>
+      <p>After more than 5 years working as a product manager in Marketing, I decided to change carreer and jump into the digital word.</p>
+      <p>I discover the programmer job and it was love at first sight! A perfect mix of logic, work in team and challenge.</p>
+      <p>To developed my skills, I completed the Le Wagon Web Devlopment bootcamp. I am now looking for an opportunity as a full-stack developer in a cool company!</p>
+      <div class="icons">
+        <a href="https://github.com/JulieT1008" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/thomasjulie1/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:juliethomas1008@gmail.com?">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container-projects">
+    <h3>My projects</h3>
+    <div class="card-project">
+      <h4>ChitChat</h4>
+      <p>A platform for interaction between parents and the nanny of their childreen.</p>
+      <p>Final project of Le Wagon Bootcamp.</p>
+      <p class="see-more" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+        See more
+      </p>
+      <div class="collapse" id="collapse1">
+        <div class="collapse-info">
+          <h5>Features:</h5>
+          <ul>
+            <li>Posts: The nanny can post pictures of the activities made by the childreen during the day, and tag only the childreen that are on the pictures. On their side, the parents will only see posts where their child is tagged</li>
+            <li>Feedbacks: The nanny can complete a daily feedback regarding the three main topics of the child day (food, sleep and diaper)</li>
+            <li>Papers: The nanny and parents can add administrative documents as contract</li>
+            <li>Chat: For nanny and parents to discuss differents topics. This chat has notifications </li>
+          </ul>
+          <p>Inspired by social media, but private, only between the parents and the nanny of their childreen.</p>
+          <br>
+          <h5>Technologies</h5>
+          <ul>
+            <li>A ruby on rails MVC</li>
+            <li>Javascript with Stimulus</li>
+            <li>Turbo frame and Turbo stream use when add comments, likes, feedbacks to not reload the full page</li>
+            <li>Gem Devise for authentication</li>
+            <li>Cloudinary for hosting pictures</li>
+            <li>PostgreSQL for DB</li>
+            <li>A 13 tables DB</li>
+            <li>Flatpickr for calendar</li>
+            <li>Action Cable for chat and notif</li>
+          </ul>
+          <a target="_blank" href="https://www.chit-chat.website/">You can check it here : https://www.chit-chat.website/</a>
+          <div class="screenshot-chitchat">
+            <img src="images/chitchat/video2.gif" width="250" height="500"/>
+            <img src="images/chitchat/video3.gif" width="250" height="500"/>
+            <img src="images/chitchat/screenshot-ChitChat6.png" width="250" height="500"/>
+            <img src="images/chitchat/screenshot-ChitChat7.png" width="250" height="500"/>
+            <img src="images/chitchat/screenshot-ChitChat8.png" width="250" height="500"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-project">
+      <h4>RNBnb</h4>
+      <p>A clone of AirBnb to rent has been Rnb artists, developed as a project during the Le Wagon Bootcamp.</p>
+      <p class="see-more" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+        See more
+      </p>
+      <div class="collapse" id="collapse2">
+        <div class="collapse-info">
+          <h5>Technologies</h5>
+          <ul>
+            <li>A ruby on rails MVC</li>
+            <li>Gem Devise for authentication</li>
+            <li>Namespacing for different kinds of ursers (manager and renter)</li>
+            <li>Call to Spotify dev API for music</li>
+            <li>Cloudinary for hosting pictures</li>
+            <li>PostgreSQL for DB</li>
+            <li>An accepted has been front with an years 2000 inspo</li>
+          </ul>
+          <a target="_blank" href="https://airbnb-djessy-lab.herokuapp.com/">You can check it here : https://airbnb-djessy-lab.herokuapp.com/</a>
+          <div class="screenshot-computer">
+            <img src="images/RNBnb/screenshot-RNBnb1.png" width="96%">
+            <img src="images/RNBnb/screenshot-RNBnb3.png" width="96%">
+            <img src="images/RNBnb/screenshot-RNBnb2.png" width="96%">
+            <img src="images/RNBnb/screenshot-RNBnb4.png" width="96%">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-project">
+      <h4>Watch List</h4>
+      <p>An exercise to discover the basis of rails realized during the Le Wagon Bootcamp.</p>
+      <p class="see-more" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+        See more
+      </p>
+      <div class="collapse" id="collapse3">
+        <div class="collapse-info">
+          <div class="screenshot-computer">
+            <img src="images/watchlist/screenshot-1.png" width="96%">
+            <img src="images/watchlist/screenshot-2.png" width="96%">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-project">
+      <h4>Profile</h4>
+      <p>A simple and cute profile page developed for an exercise during the Le Wagon Bootcamp, using HTML and CSS.</p>
+      <p class="see-more" data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+        See more
+      </p>
+      <div class="collapse" id="collapse4">
+        <div class="collapse-info">
+          <a target="_blank" href="http://juliet1008.me/profile/">You can check it here : http://juliet1008.me/profile/</a>
+          <div class="screenshot-computer">
+            <img src="images/screenshot-profile.png" width="96%">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-project">
+      <h4>Landing</h4>
+      <p>A front-end exercice realize during the Le Wagon Bootcamp, using HTML and CSS.</p>
+      <p class="see-more" data-bs-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse5">
+        See more
+      </p>
+      <div class="collapse" id="collapse5">
+        <div class="collapse-info">
+          <a target="_blank" href="https://juliet1008.github.io/landing/">You can check it here : https://juliet1008.github.io/landing/</a>
+          <div class="screenshot-computer">
+            <img src="images/screenshot-landing.png" width="96%">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card-project">
+      <h4>Name</h4>
+      <p>Description</p>
+      <p class="see-more" data-bs-toggle="collapse" href="#collapse6" role="button" aria-expanded="false" aria-controls="collapse6">
+        See more
+      </p>
+      <div class="collapse" id="collapse6">
+        <div class="collapse-info">
+          <h5>Sub-title</h5>
+          <ul>
+            <li>list informations</li>
+          </ul>
+          <p>Other info</p>
+          <a target="_blank" href="#">You can check it here : link</a>
+          <div class="screenshot">
+            images here
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
