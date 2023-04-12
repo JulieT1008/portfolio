@@ -34,19 +34,23 @@ h1, h2, h3, h4, h5 {
   grid-template-columns: auto auto;
 }
 
+.picture {
+  width: 400px;
+  margin: 10px 50px;
+  border: 8px solid #C9C9B0;
+  border-radius: 2px;
+}
+
 @media (max-width: 1100px) {
   .container-presentation {
     grid-template-columns: auto;
     text-align: center;
     justify-items: center;
   }
-}
 
-.picture {
-  width: 400px;
-  margin: 10px 50px;
-  border: 8px solid #C9C9B0;
-  border-radius: 2px;
+  .picture {
+    width: 300px;
+  }
 }
 
 .card-presentation {
